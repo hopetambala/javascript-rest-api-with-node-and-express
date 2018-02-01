@@ -1,0 +1,56 @@
+extends layout
+
+block content
+    h1= title
+    p Puente: Desarollo Internacional Web API
+
+    // Wrapper
+    #wrapper
+
+        // USER INFO
+        #userInfo
+            h2 Member Info Overview
+            p
+                strong Name:
+                |  <span id='userInfoFirstName'></span> <span id='userInfoLastName'></span>
+                br
+                strong Age:
+                |  <span id='userInfoAge'></span>
+                br
+                strong Gender:
+                |  <span id='userInfoSex'></span>
+                br
+                strong Their Biggest Problem in the Region:
+                |  <span id='userInfoBiggestProblemintheRegion'></span>
+                br
+                strong How Can We Solve It:
+                |  <span id='userInfoHowcanweaddressandimprovethesituation'></span>
+                
+            p 
+                i NISI:
+                br 
+                | Not in Survery Iteration
+                br 
+                br
+                i N/A:
+                br
+                | Not Available/Invalidated Due to Technical Dificulty
+                br 
+                br
+                i D/A:
+                br
+                | Doesn't Apply
+        // /USER INFO
+
+        // USER TABLE LIST
+        h2 Members List
+        #userList
+            table
+                thead
+                    th First Name
+                    th Last Name
+                    th Delete?
+                tbody
+        // /USER LIST
+
+    // /WRAPPER
